@@ -1,0 +1,29 @@
+.header {
+  padding-top: 1rem;
+  padding-bottom: 4.13rem;
+}
+
+.header__navigation {
+  margin-bottom: 2.37rem;
+}
+
+@media screen and (min-width: 48rem) {
+  .header {
+    padding-top: 1.5rem;
+    padding-bottom: 7.69rem;
+  }
+
+  .header__navigation {
+    margin-bottom: 2.25rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .header {
+    padding-bottom: 8.38rem;
+  }
+
+  .header__navigation {
+    margin-bottom: 5.44rem;
+  }
+}

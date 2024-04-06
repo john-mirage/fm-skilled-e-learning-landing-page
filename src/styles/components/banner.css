@@ -1,0 +1,17 @@
+.banner {
+  padding: 1.5rem 1.81rem 2rem 1.75rem;
+  border-radius: 0.625rem;
+  background: linear-gradient(to bottom, var(--color-gradient-orange), var(--color-gradient-pink));
+}
+
+@media screen and (min-width: 40rem) {
+  .banner {
+    padding: 3.5rem 2rem 2rem 2rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .banner {
+    padding: 4rem 2rem 2rem 2rem;
+  }
+}

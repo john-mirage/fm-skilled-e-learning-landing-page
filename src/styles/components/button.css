@@ -1,0 +1,69 @@
+.button {
+  position: relative;
+  border-radius: 9999px;
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button--on-hero .button__overlay,
+.button--on-footer .button__overlay {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  background-color: var(--color-white);
+  transition-property: visibility, opacity;
+  transition-duration: 150ms;
+}
+
+.button--on-hero .button__label,
+.button--on-footer .button__label {
+  position: relative;
+  z-index: 50;
+}
+
+.button--on-navigation {
+  padding: 0.56rem 1.5rem 0.69rem 1.5rem;
+  transition-property: background-color;
+  transition-duration: 150ms;
+  background-color: var(--color-dark-blue);
+}
+
+.button--on-hero {
+  padding: 0.94rem 2.31rem 0.94rem 2.38rem;
+  background: linear-gradient(to bottom, var(--color-gradient-orange), var(--color-gradient-pink));
+}
+
+.button--on-footer {
+  padding: 0.56rem 1.5rem 0.69rem 1.5rem;
+  background: linear-gradient(to bottom, var(--color-gradient-blue), var(--color-gradient-pink));
+}
+
+@media screen and (hover: hover) {
+  .button--on-navigation:hover {
+    background-color: hsl(234, 25%, 52%);
+  }
+
+  .button--on-hero:hover .button__overlay,
+  .button--on-footer:hover .button__overlay {
+    visibility: visible;
+    opacity: 0.5;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .button--on-navigation,
+  .button--on-footer {
+    padding: 0.87rem 1.94rem 0.87rem 2rem;
+  }
+
+  .button--on-hero {
+    padding: 1.19rem 1.94rem 1rem 2rem;
+  }
+}

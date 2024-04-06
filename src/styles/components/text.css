@@ -1,0 +1,109 @@
+.text {
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-feature-settings: 'clig' off, 'liga' off;
+}
+
+.text--dark-blue {
+  color: var(--color-dark-blue);
+}
+
+.text--grey {
+  color: var(--color-grey);
+}
+
+.text--white {
+  color: var(--color-white);
+}
+
+.text--pink {
+  color: var(--color-pink);
+}
+
+.text--heading-lg {
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.text--heading-md {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 2rem; /* 133.333% */
+}
+
+.text--heading-sm {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.text--heading-xs {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem; /* 200% */
+}
+
+.text--body-lg {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.text--body-md {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.625rem; /* 162.5% */
+}
+
+.text--label-lg {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem; /* 155.556% */
+}
+
+.text--label-md {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.625rem; /* 162.5% */
+}
+
+@media screen and (min-width: 64rem) {
+  .text--heading-lg {
+    font-size: 3.5rem;
+  }
+
+  .text--heading-md {
+    font-size: 2rem;
+    line-height: 2.5rem; /* 125% */
+  }
+
+  .text--heading-sm {
+    font-size: 1.5rem;
+  }
+
+  .text--heading-xs {
+    font-size: 1rem;
+  }
+
+  .text--body-lg {
+    font-size: 2.5rem;
+  }
+
+  .text--body-md {
+    font-size: 1.125rem;
+    line-height: 1.75rem; /* 155.556% */
+  }
+
+  .text--label-md {
+    font-size: 1.125rem;
+    line-height: 1.75rem; /* 155.556% */
+  }
+}

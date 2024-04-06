@@ -1,0 +1,19 @@
+.logo {
+  width: 5.5625rem;
+  height: 2.1875rem;
+}
+
+.logo--on-light {
+  color: var(--color-dark-blue);
+}
+
+.logo--on-dark {
+  color: var(--color-white);
+}
+
+@media screen and (min-width: 64rem) {
+  .logo {
+    width: 6.948rem;
+    height: 1.73025rem;
+  }
+}

@@ -1,0 +1,106 @@
+.illustration {
+  position: relative;
+  max-width: 21.4375rem;
+  width: 100%;
+  height: 21.4375rem;
+}
+
+.illustration__stat {
+  position: absolute;
+  z-index: 50;
+}
+
+.illustration__stat--members {
+  top: 0;
+  right: 0;
+}
+
+.illustration__stat--course-hours {
+  bottom: 0;
+  left: 0;
+}
+
+.illustration__picture {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 15.875rem;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 9999px;
+  background: linear-gradient(to bottom, var(--color-gradient-orange), var(--color-gradient-pink));
+  overflow: hidden;
+}
+
+.illustration__picture-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom;
+}
+
+.illustration__shape {
+  display: none;
+}
+
+@media screen and (min-width: 48rem) {
+  .illustration {
+    max-width: none;
+    width: 19.5625rem;
+    height: 27.125rem;
+    aspect-ratio: auto;
+  }
+
+  .illustration__picture {
+    max-width: none;
+    width: 13.53375rem;
+    height: 23.90819rem;
+    aspect-ratio: auto;
+  }
+
+  .illustration__shape {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    bottom: 8.4rem;
+    left: 0.5rem;
+    width: 13.5rem;
+    height: 43rem;
+    border-radius: 9999px;
+    background: linear-gradient(to bottom, var(--color-gradient-blue), var(--color-gradient-pink));
+    transform: rotate(45deg);
+    transform-origin: bottom left;
+  }
+}
+
+@media screen and (min-width: 73.375rem) {
+  .illustration {
+    width: 34.75rem;
+    height: 35rem;
+  }
+
+  .illustration__stat--members {
+    top: 6.4375rem;
+  }
+  
+  .illustration__stat--course-hours {
+    bottom: 6.125rem;
+  }
+
+  .illustration__picture {
+    width: 19.8125rem;
+    height: 35rem;
+  }
+
+  .illustration__shape {
+    bottom: 10rem;
+    left: 3.4rem;
+    width: 19.8125rem;
+    height: 63rem;
+  }
+}

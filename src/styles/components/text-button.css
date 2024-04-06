@@ -1,0 +1,15 @@
+.text-button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: var(--color-pink);
+  transition-property: color;
+  transition-duration: 150ms;
+  cursor: pointer;
+}
+
+@media screen and (hover: hover) {
+  .text-button:hover {
+    color: hsl(341, 100%, 83%);
+  }
+}
